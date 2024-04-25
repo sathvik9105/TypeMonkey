@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TypeMonkey | Practice</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="js/navbar2.js"></script>
+</head>
+
+<body id="body">
+
+    <special-header></special-header>
+
+    <div class="container1">
+
+        <div class="time">
+            <button>
+              <img src="assets/images/speed-icon.svg">
+              <span>time</span>
+              <span id="dash">|</span>
+            </button>
+            <button id="fifteen">15s</button>
+            <button id="thirty">30s</button>
+            <button id="sixty" >60s</button>
+            <button id="ninty" >90s</button>
+        </div>
+
+        <div class="level">
+            <button>
+                <img src="assets/images/trace.svg">
+                <span id="lvl">level</span>
+                <span id="dash">|</span>
+            </button>
+            <div class="limit">
+                <button id="easy" class="black">Easy</button>
+                <button id="med">Medium</button>
+                <button id="hard">Hard</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div class="container-fluid box ">
+      
+        <div class="stats center">
+          <div class="stat-block if">
+            <div id="timeName" class = "stat-name black if">Timer:</div>
+            <div id="time" class="details if ">00</div>
+          </div>
+  
+          <div class="stat-block if">
+            <div id="cwName" class = "stat-name black if">Correct:</div>
+            <div id="cw" class="details if">0</div>
+          </div>
+
+          <div class="stat-block if">
+            <div id="iwName" class = "stat-name black if">Incorrect:</div>
+            <div id="iw" class="details if">0</div>
+          </div>
+        </div>
+  
+        <div class="text-display" id="textDisplay"></div>
+  
+        <div class="input-area center">
+          <textarea rows="1" class="text-input" id="textInput" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+        </div>
+  
+        <div  class="restart-button center">
+            <a id="restartBtn" class = "current" href="#">
+                <button id="rstbtn"><img src="assets/images/refresh-2-32 .png"></button>
+            </a>
+        </div>
+    
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

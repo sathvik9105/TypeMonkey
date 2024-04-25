@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+    
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#380036, #0CBABA);
+}
+
+.container{
+    max-width: 650px;
+    padding: 30px;
+    margin: 0 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 550;
+    text-align: left;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1 px solid silver;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.inputbox:nth-child(2n){
+    justify-content: end;
+}
+.inputbox label{
+    width: 95%;
+    font-weight: 550;
+    margin: 5px 0;
+    color: #aa076b;
+}
+.inputbox input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.inputbox input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.alert p{
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 1.5;
+}
+.alert a{
+    font-weight: bold;
+    text-decoration: none;
+    color: skyblue;
+}
+.alert a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #380036;
+
+}
+
+.button{
+    margin: 15px 0;
+}
+
+#btn{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #aa076b, #61045f);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button btn:hover{
+    background-image: linear-gradient(to right, #61045f, #aa076b);
+    
+}
+
+@media sceen and (max-width:576px){
+    .container{
+        min-width: 280px;
+    }
+    .content{
+        max-height: 380px;
+        overflow: hidden;
+    }
+    .inputbox{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .inputbox :nth-child(2n){
+        justify-content: space-between;
+    }
+}
